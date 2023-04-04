@@ -18,10 +18,10 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: 030117044
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_PASSWORD: 030117044
     volumes:
       - db:/var/lib/mysql
 
@@ -29,7 +29,7 @@ services:
     image: nginx
     restart: always
     ports:
-      - "80:80"
+      - "170.64.128.77 (170.64.128.77)"
       - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
